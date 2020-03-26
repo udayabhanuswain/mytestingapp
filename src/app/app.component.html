@@ -1,0 +1,8 @@
+<h4>Tutorials</h4>
+
+
+<ul>
+    <li (click)="cliking(i)" *ngFor="let tutorial of bhanututorials | async; let i=index">
+      <a [href] ="tutorial.url" target="_blank">{{ tutorial.name}}</a>
+    </li>
+</ul>
